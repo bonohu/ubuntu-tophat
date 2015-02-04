@@ -6,6 +6,7 @@ ADD tophat.sh /usr/local/bin/run.sh
 # Install packages
 RUN apt-get update && \
     apt-get install -y tophat &&\
+    apt-get install -y samtools &&\
     apt-get install -y wget &&\
     apt-get install -y zip &&\
     rm -rf /var/lib/apt/lists/*
