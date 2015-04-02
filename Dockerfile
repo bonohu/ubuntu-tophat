@@ -5,7 +5,6 @@ MAINTAINER Hidemasa Bono, bonohu@gmail.com
 ADD tophat.sh /usr/local/bin/run.sh
 # Install packages
 RUN apt-get update &&\
-    apt-get upgrade &&\
     apt-get install -y wget zip bzip2 &&\
     apt-get install -y tophat &&\
     apt-get install -y samtools &&\
